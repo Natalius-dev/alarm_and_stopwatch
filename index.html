@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html class="h-100">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <link href="./bootstrap.min.css" rel="stylesheet">
+    <title>Hello World!</title>
+</head>
+
+<body class="h-100">
+    <div class="container text-center h-100">
+        <div class="row row-cols-4 h-100 align-content-center">
+            <div class="col align-self-center my-1 mx-0 p-0">
+                <p class="h4">Date</p>
+                <hr>
+            </div>
+            <div class="col align-self-center my-1 mx-0 p-0">
+                <p class="h4">Time</p>
+                <hr>
+            </div>
+            <div class="col align-self-center my-1 mx-0 p-0">
+                <p class="h4">Stopwatch</p>
+                <hr>
+            </div>
+            <div class="col align-self-center my-1 mx-0 p-0">
+                <p class="h4">Alarm</p>
+                <hr>
+            </div>
+
+            <div class="col align-self-center my-1 mx-0 p-0">
+                <span id="date"></span>
+            </div>
+            <div class="col align-self-center my-1 mx-0 p-0">
+                <span id="clock"></span>
+            </div>
+            <div class="col align-self-center my-1 mx-0 p-0">
+                <span id="stopwatch">00:00:00</span>
+            </div>
+            <div class="row align-self-center my-1 mx-0 p-0">
+                <p class="m-0 p-0">
+                    <a class="text-black" data-bs-toggle="collapse" href="#collapseExample"
+                        role="button" aria-expanded="false" aria-controls="collapseExample">
+                        View Alarms
+                    </a>
+                </p>
+                <div class="collapse mt-2" id="collapseExample">
+                    <ul class="list-group" id="alarm">
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col align-self-center my-3">
+
+            </div>
+            <div class="col align-self-center my-3">
+
+            </div>
+            <div class="col align-self-center my-3">
+                <button id="stopwatchBtn" type="button" class="btn btn-primary px-4">Start</button>
+            </div>
+            <div class="col align-self-center my-3">
+                <button class="btn btn-primary" id="openAlarmModal">Add Alarm</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="card position-absolute top-50 start-50 translate-middle px-3 py-2" id="alarmModal">
+        <input type="time" id="alarm-pick" class="px-3 py-2 mb-1">
+        <button class="btn btn-primary mt-1" id="alarmBtn">Add Alarm</button>
+    </div>
+    
+
+    <script src="./bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="./app.js"></script>
+</body>
+
+</html>

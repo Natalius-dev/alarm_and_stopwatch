@@ -1,0 +1,14 @@
+{
+  "name": "alarm_and_stopwatch",
+  "version": "1.0.0",
+  "description": "A simple desktop alarm and stopwatch app",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Natalius",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^26.2.1"
+  }
+}
