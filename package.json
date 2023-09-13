@@ -4,11 +4,17 @@
   "description": "A simple desktop alarm and stopwatch app",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
   },
   "author": "Natalius",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^26.2.1"
+    "electron": "^26.2.1",
+    "electron-builder": "^24.6.4"
+  },
+  "build": {
+    "appId": "com.electron.natalius"
   }
 }

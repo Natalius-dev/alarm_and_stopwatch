@@ -7,12 +7,12 @@ const path = require('node:path')
 const createWindow = () => {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
-    width: 800,
-    height: 600
   })
 
   // and load the index.html of the app.
   mainWindow.loadFile('index.html')
+  mainWindow.setMenu(null)
+  mainWindow.setTitle("Alarm and Stopwatch")
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()

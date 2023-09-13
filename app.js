@@ -75,11 +75,12 @@ document.getElementById("openAlarmModal").onclick = () => {
 
 const tick = () => {
     const date = new Date();
+    console.log(alarmsTimestamps)
     document.getElementById("date").innerHTML = add0(date.getDate()) + " " + month_to_text(date.getMonth()) + ", " + date.getFullYear();
     document.getElementById("clock").innerHTML = add0(date.getHours()) + ":" + add0(date.getMinutes()) + ":" + add0(date.getSeconds());
 
     for (let i = 0; i < alarmsTimestamps.length; i++) {
-        if (String(date.getHours()) === alarmsTimestamps[i].hour && String(date.getMinutes()) === alarmsTimestamps[i].minute) {
+        if (add0(date.getHours()) === alarmsTimestamps[i].hour && add0(date.getMinutes()) === alarmsTimestamps[i].minute) {
             alert("Alarm for " + alarmsTimestamps[i].hour + ":" + alarmsTimestamps[i].minute + " has been activated!");
             alarmsTimestamps.splice(i, 1);
             alarms.splice(i, 1);

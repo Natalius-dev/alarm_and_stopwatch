@@ -1,0 +1,39 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\natal\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add electron-builder --dev
+
+PATH: 
+  C:\Users\natal\AppData\Local\Programs\Python\Python311\Scripts;C:\Users\natal\AppData\Local\Programs\Python\Python311;C:\Program Files\Java\jre1.8.0_321\bin;C:\Program Files\Java\jdk-17.0.2\bin;C:\Program Files (x86)\Windows Resource Kits\Tools\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Nintendo\Nintendo Dev Interface;C:\xampp\php;C:\Program Files\Java\jdk1.8.0_281\bin;C:\ffmpeg;C:\gifsicle;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\msys64\mingw64\bin;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;C:\sqlmap\;C:\Users\natal\.nvm;C:\Program Files\nodejs;C:\Program Files\dotnet\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\dart-sass;C:\Program Files\Git LFS;C:\Program Files (x86)\WinSCP\;C:\Users\natal\AppData\Local\Android\Sdk;C:\Users\natal\AppData\Local\Android\Sdk\platform-tools;C:\Users\natal\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\natal\AppData\Local\Programs\Python\Python311\;C:\Program Files\Java\jre1.8.0_321\bin;C:\Program Files\Java\jdk-17.0.2\bin;C:\Ruby30-x64\bin;C:\Users\natal\AppData\Local\GitHubDesktop\bin;C:\Program Files\heroku\bin;C:\ffmpeg;C:\Users\natal\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Windows Kits\10\bin\10.0.19041.0\x64;C:\msys64\mingw64\bin;C:\Program Files\CMake\bin;C:\Users\natal\AppData\Local\ComposerSetup\bin;C:\Users\natal\AppData\Roaming\Composer\vendor\bin;C:\Program Files\Oracle\VirtualBox;C:\Program Files\ISC BIND 9\bin;C:\sqlmap\sqlmap.py;C:\Users\natal\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\natal\Documents\Flutter SDK\bin;C:\Users\natal\.nvm;C:\Users\natal\AppData\Roaming\npm;C:\Users\natal\.dotnet\tools;C:\Gradle\bin;C:\Program Files (x86)\WinSCP\WinSCP.com;C:\Program Files\nodejs;
+
+Yarn version: 
+  1.22.17
+
+Node version: 
+  18.4.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EBUSY: resource busy or locked, unlink 'C:\Users\natal\Misc\natalius_X3_27\natalius_X3_27\canicomp\alarm_and_stopwatch\node_modules\electron\dist\resources\default_app.asar'
+
+npm manifest: 
+  {
+    "name": "alarm_and_stopwatch",
+    "version": "1.0.0",
+    "description": "A simple desktop alarm and stopwatch app",
+    "main": "main.js",
+    "scripts": {
+      "start": "electron ."
+    },
+    "author": "Natalius",
+    "license": "ISC",
+    "devDependencies": {
+      "electron": "^26.2.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
