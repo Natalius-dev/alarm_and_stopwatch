@@ -1,6 +1,6 @@
 {
   "name": "alarm_and_stopwatch",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple desktop alarm and stopwatch app",
   "main": "main.js",
   "scripts": {

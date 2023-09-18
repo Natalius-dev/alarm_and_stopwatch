@@ -2,6 +2,16 @@ const add0 = (int) => {
     return (String(int).length === 1 ? "0" + String(int) : String(int))
 }
 
+const format000 = (int) => {
+    if (String(int).length === 1) {
+        return "00" + String(int)
+    } else if (String(int).length === 2) {
+        return "0" + String(int)
+    } else {
+        return String(int)
+    }
+}
+
 const month_to_text = (int) => {
     switch (String(int + 1)) {
         case '1':
@@ -39,10 +49,10 @@ let timestamp
 document.getElementById("stopwatchBtn").onclick = stopwatch = () => {
     stopwatchActive = !stopwatchActive;
     if (stopwatchActive) {
-        document.getElementById("stopwatchBtn").innerHTML = "Pause"
+        document.getElementById("stopwatchBtn").innerHTML = "Stop"
     } else {
         document.getElementById("stopwatchBtn").innerHTML = "Start";
-        document.getElementById("stopwatch").innerHTML = "00:00:00"
+        document.getElementById("stopwatch").innerHTML = "00:00:000"
     }
     timestamp = Date.now();
 }
@@ -97,7 +107,7 @@ const tick = () => {
         const stopwatchTime = new Date();
         stopwatchTime.setTime(Date.now() - timestamp);
         if (stopwatchTime.getMinutes() !== 59 && stopwatchTime.getSeconds() !== 59) {
-            document.getElementById("stopwatch").innerHTML = add0(stopwatchTime.getMinutes()) + ":" + add0(stopwatchTime.getSeconds()) + ":" + stopwatchTime.getMilliseconds();
+            document.getElementById("stopwatch").innerHTML = add0(stopwatchTime.getMinutes()) + ":" + add0(stopwatchTime.getSeconds()) + ":" + format000(stopwatchTime.getMilliseconds());
         }
     }
 }
